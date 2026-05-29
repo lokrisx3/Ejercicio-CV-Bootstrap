@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+.cv-container {
+    width: min(100% - 2rem, 1140px);
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.cv-card {
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.cv-header {
+    padding: 3rem;
+    color: #ffffff;
+    background-color: #0d6efd;
+}
+
+.cv-label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.cv-title {
+    margin-bottom: 1rem;
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.cv-summary {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.cv-content {
+    padding: 3rem;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: 3rem;
+}
+
+.cv-section {
+    margin-bottom: 3rem;
+}
+
+.cv-section:last-child {
+    margin-bottom: 0;
+}
+
+.cv-section-title {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 1.5rem;
+}
+
+.cv-subtitle {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.cv-text {
+    margin-bottom: 0;
+}
+
+.cv-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.cv-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cv-list li:last-child {
+    border-bottom: 0;
+}
+
+.cv-contact {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.cv-button {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    color: #0d6efd;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #0d6efd;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.cv-button:hover {
+    color: #ffffff;
+    background-color: #0d6efd;
+}
+
+@media (max-width: 991.98px) {
+    .cv-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .cv-header,
+    .cv-content {
+        padding: 1.5rem;
+    }
+}
